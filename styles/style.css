@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+  
+.dish-image {
+  height: 171px;
+  object-fit: cover;
+  width: 100%;
+}
