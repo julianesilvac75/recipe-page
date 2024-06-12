@@ -1,3 +1,8 @@
+:root {
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --wenge-brown: hsl(30, 10%, 34%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +24,23 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 2.5rem 2rem;
+}
+
+.recipe-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+.recipe-description h1 {
+  color: var(--dark-charcoal);
+  font-family: 'Young Serif', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.recipe-description p {
+  color: var(--wenge-brown);
+  line-height: 150%;
 }
