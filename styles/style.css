@@ -62,15 +62,26 @@ body {
   line-height: 100%;
 }
 
-.recipe-preparation-time ul {
+ol, ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  list-style-position: inside;
+  list-style: none;
 }
 
-.recipe-preparation-time ul li {
-  padding-left: 1rem;
+ul li::before {
+  color: var(--dark-raspberry);
+  content: '\2022';
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  width: 1rem;
+}
+
+ul li {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .recipe-section-title {
@@ -86,11 +97,4 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-left: 1.5rem;
 }
