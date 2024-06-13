@@ -67,21 +67,28 @@ ol, ul {
   flex-direction: column;
   gap: 0.5rem;
   list-style: none;
+  counter-reset: li;
 }
 
-ul li::before {
+li::before {
   color: var(--dark-raspberry);
-  content: '\2022';
   display: inline-block;
   font-weight: 700;
   margin-left: 0.5rem;
   width: 1rem;
 }
+  
+ul li::before {
+  content: '\2022';
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+}
 
 ul li {
   align-items: center;
-  display: flex;
-  gap: 1rem;
 }
 
 .recipe-section-title {
@@ -97,4 +104,12 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+ol li::before {
+  content: counter(li) '. ';
+}
+
+ol li {
+  counter-increment: li;
 }
