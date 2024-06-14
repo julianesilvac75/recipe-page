@@ -62,6 +62,10 @@ body {
   line-height: 100%;
 }
 
+.recipe-preparation-time ul li::before {
+  color: var(--dark-raspberry);
+}
+
 ol, ul {
   display: flex;
   flex-direction: column;
@@ -71,7 +75,7 @@ ol, ul {
 }
 
 li::before {
-  color: var(--dark-raspberry);
+  color: var(--nutmeg);
   display: inline-block;
   font-weight: 700;
   margin-left: 0.5rem;
@@ -100,7 +104,6 @@ ul li {
 }
 
 .recipe-section-container {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
