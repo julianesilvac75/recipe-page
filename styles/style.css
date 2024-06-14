@@ -3,6 +3,7 @@
   --wenge-brown: hsl(30, 10%, 34%);
   --dark-raspberry: hsl(332, 51%, 32%);
   --nutmeg: hsl(14, 45%, 36%);
+  --white-coffee: hsl(30, 18%, 87%);
 }
 
 * {
@@ -117,4 +118,56 @@ ol li::before {
 
 ol li {
   counter-increment: li;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid var(--white-coffee);
+  padding: 1rem 0;
+}
+
+tr:first-child th, tr:first-child td {
+  padding-top: 0;
+}
+
+tr:last-child th, tr:last-child td {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+th {
+  padding-left: 2rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+td {
+  color: var(--nutmeg);
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+footer a {
+  color: var(--dark-raspberry);
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--nutmeg);
 }
