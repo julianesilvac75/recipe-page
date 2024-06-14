@@ -81,6 +81,8 @@ li::before {
   margin-left: 0.5rem;
   width: 1rem;
 }
+
+/* REFERENCE FOR <li> MARKER STYLING: https://www.w3.org/Style/Examples/007/color-bullets.en.html#spans */
   
 ul li::before {
   content: '\2022';
