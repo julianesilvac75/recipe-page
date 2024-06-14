@@ -1,8 +1,10 @@
 :root {
   --dark-charcoal: hsl(24, 5%, 18%);
-  --wenge-brown: hsl(30, 10%, 34%);
   --dark-raspberry: hsl(332, 51%, 32%);
+  --eggshell: hsl(30, 54%, 90%);
   --nutmeg: hsl(14, 45%, 36%);
+  --rose-white: hsl(330, 100%, 98%);
+  --wenge-brown: hsl(30, 10%, 34%);
   --white-coffee: hsl(30, 18%, 87%);
 }
 
@@ -13,9 +15,19 @@
 }
 
 body {
+  background-color: var(--eggshell);
   color: var(--wenge-brown);
   font-family: 'Outfit', sans-serif;
   line-height: 150%;
+}
+
+main {
+  justify-content: center;
+  display: flex;
+}
+
+.content-container {
+  background-color: var(--rose-white);
 }
   
 .dish-image {
@@ -170,4 +182,23 @@ footer a {
 
 footer a:hover {
   color: var(--nutmeg);
+}
+
+@media (min-width: 736px) {
+  .content-container {
+    border-radius: 1.5rem;
+    margin: 50px;
+    padding: 2.5rem;
+    width: 736px;
+  }
+
+  .dish-image {
+    border-radius: 0.75rem;
+    height: 300px;
+  }
+
+  .recipe-container {
+    padding: 0;
+    padding-top: 2.5rem;
+  }
 }
