@@ -71,7 +71,7 @@ main {
   padding: 1.5rem;
 }
 
-.recipe-preparation-time h3 {
+.recipe-preparation-time h2 {
   color: var(--dark-raspberry);
   font-size: 1.25rem;
   font-weight: 600;
