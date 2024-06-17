@@ -6,6 +6,7 @@
   --rose-white: hsl(330, 100%, 98%);
   --wenge-brown: hsl(30, 10%, 34%);
   --white-coffee: hsl(30, 18%, 87%);
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -27,7 +28,7 @@ main {
 }
 
 .content-container {
-  background-color: var(--rose-white);
+  background-color: var(--white);
 }
   
 .dish-image {
@@ -62,7 +63,7 @@ main {
 }
 
 .recipe-preparation-time {
-  background-color: var(--eggshell);
+  background-color: var(--rose-white);
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
